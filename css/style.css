@@ -1,0 +1,273 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: black;
+
+}
+
+h2 {
+  /*font-family:;*/
+  color: gray;
+  text-transform: uppercase;
+  font-size: 80px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/*.....NAVIGATION HEAD........*/
+.header {
+position: fixed;
+margin-top: 7vh;
+width: 100%;
+display: block;
+opacity: 0.5;
+transition: opacity 0.5s;
+z-index: 2;
+}
+.header:hover{
+  opacity: 1;
+}
+.logoJW {
+  position: relative;
+  margin-left: 5%;
+  float: left;
+  width: 50px;
+  z-index: 2000;
+}
+.logoJW path {
+  fill: gray;
+}
+.logoJW path:hover{
+  fill: white;
+}
+
+.Navi {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  float: right;
+  margin-right: 5%;
+  text-align:right;              /* Textausrichtung     */
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+  z-index: 2000;
+}
+
+.header ul {
+    list-style-type: none;
+}
+.header a:link {
+    color: gray;
+    text-decoration: none;
+}
+.header a:visited {
+    color: gray;
+    text-decoration: none;
+}
+.header a:hover {
+    color: white;
+    text-decoration: none;
+}
+.header a:active {
+    text-decoration: none;
+}
+
+/*..........STARTVIDEO.........*/
+.pagecontainervideo video {
+  object-fit: cover;
+ width:100%;
+ height:100%;
+}
+.pagecontainervideo {
+  display: block;
+  margin-left: -15px;
+  margin-right: -15px;
+  /* margin: 0 auto; */
+  height: 100vh;
+  /*background-color: blue;*/
+}
+.pagecontainer {
+  text-align: left;
+  padding-top: 5vh;
+  height:100vh;
+}
+
+/*........Work.........*/
+.pagecontainerwork {
+  position: relative;
+  /*z-index: -1;*/
+  text-align: left;
+  padding-top: 20vh;
+  padding-bottom: 15vh;
+  min-height: 100vh;
+  height:100%;
+}
+
+.pagecontainerwork a{
+height: 100%;
+width: 100%;
+}
+
+.pagecontainerwork img{
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.pagecontainerwork figure{
+}
+
+.work01 figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.work01 figure:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+.beschriftung{
+  position: absolute;
+  bottom:30%;
+  left: 33%;
+}
+
+.beschriftung h3{
+  line-height: 50%;
+  font-weight: bold;
+  color: lightgray;
+    text-shadow: 0px 2px 2px black;
+}
+
+h4{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: lightgray;
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+}
+
+.beschriftung p{
+  text-shadow: 0px 2px 2px black;
+  color: lightgray;
+}
+
+.allworks{
+  height: 50%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-style: solid;
+  border-color: gray;
+  border-width: 3px;
+  border-radius: 0px;
+}
+
+.allworks img{
+  margin-bottom: -15px;
+  margin-top: -15px;
+  opacity: 0;
+}
+
+
+/*........About Me Text.........*/
+.pagecontainer p {
+text-align: left;
+padding-top: 30vh;
+padding-left: 40vw;
+padding-right: 33vw;
+padding-bottom: 15vh;
+font-size: 20px;
+font-weight: 100;
+color: lightgray;
+min-height: 100vh;
+height:100%;
+}
+
+/*..........Contact links........*/
+.pagecontainercontact{
+  padding-top: 30vh;
+  height: 95vh;
+}
+.media {
+  display: block;
+  margin-left: -15px;
+  margin-right: -15px;
+  text-align: center;
+  padding-bottom: 5vh;
+}
+.media a{
+  font-size: 24px;
+  font-family: 'Nunito', sans-serif;
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+}
+.footer{
+  height: 5vh;
+  text-align: center;
+}
+
+
+/*Rules for Mobile Devices*/
+@media (max-width: 1080px) {
+  .header {
+  margin-top: 3vh;
+  }
+
+  /*....RESPONSIVE About...*/
+  .pagecontainer p {
+  font-size: 30px;
+  font-weight: 100;
+  padding-top: 12vh;
+  padding-left: 10vw;
+  padding-right: 5vw;
+  }
+
+  /*....RESPONSIVE Work...*/
+  .pagecontainerwork {
+    padding-top: 18vh;
+
+  }
+  .pagecontainerwork img{
+    margin-top: 0px;
+  }
+
+  .beschriftung{
+    position: absolute;
+    bottom: 20%;
+    left: 25%;
+  }
+
+  .allworks{
+    margin-top: 0px;
+  }
+
+  /*....RESPONSIVE Contact links...*/
+  .pagecontainercontact{
+    align-items: center;
+    padding-top: 22vh;
+  }
+  .media {
+    padding-bottom: 8vh;
+    padding-left: 8vw;
+    padding-right: 5vw;
+  }
+  .media a{
+    font-size: 30px;
+  }
+
+  /*....RESPONSIVE NAVIGATION...*/
+
+
+@media (max-width: ) {
+
+}
