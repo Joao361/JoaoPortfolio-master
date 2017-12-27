@@ -119,19 +119,6 @@ width: 100%;
   margin-top: 15px;
 }
 
-.pagecontainerwork figure{
-}
-
-.work01 figure img {
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-.work01 figure:hover img {
-	-webkit-transform: scale(1.3);
-	transform: scale(1.3);
-}
 
 .beschriftung{
   position: absolute;
@@ -156,6 +143,7 @@ h4{
   color: lightgray;
   font-variant: small-caps;
   letter-spacing: 0.1em;
+  font-size: 18px;
 }
 
 .beschriftung p{
@@ -212,6 +200,23 @@ height:100%;
   font-variant: small-caps;
   letter-spacing: 0.1em;
 }
+
+.media a:link {
+    color: gray;
+    text-decoration: none;
+}
+.media a:visited {
+    color: gray;
+    text-decoration: none;
+}
+.media a:hover {
+    color: white;
+    text-decoration: none;
+}
+.media a:active {
+    text-decoration: none;
+}
+
 .footer{
   height: 5vh;
   text-align: center;
@@ -246,6 +251,10 @@ height:100%;
     position: absolute;
     bottom: 20%;
     left: 25%;
+  }
+
+  .beschriftung h3{
+    font-size: 20px;
   }
 
   .allworks{
