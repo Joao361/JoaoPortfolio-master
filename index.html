@@ -12,12 +12,16 @@
 </head>
 
 <body>
+
   <div class="header">
+
     <div class="logoJW">
     <a href="#index">
     <img src="Images/InitailienJW_VAR02.svg" alt="Logo JW" height="70px">
     </a>
     </div>
+
+<!-- ...Textlink  Nav...
 
     <ul class="Navi">
     <li class="c-header__item"><a href="#work" class="link_header">work</a>
@@ -27,7 +31,16 @@
     <li class="c-header__item"><a href="#contact" class="link_header">contact</a>
     </li>
     </ul>
+-->
+
+    <div id="menu" onclick="openNav()">
+      <div class="menubar"></div>
+      <div class="menubar"></div>
+      <div class="menubar"></div>
+    </div>
+
   </div>
+
 
   <div id="index">
   </div>
@@ -39,6 +52,27 @@
     </video>
   </div>
 
+  <!--OVERLAY NAV-->
+  <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#work" onclick="closeNav()">work</a>
+    <a href="#about" onclick="closeNav()">about</a>
+    <a href="#contact" onclick="closeNav()">contact</a>
+  </div>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
+  <!--OVERLAY NAV_END-->
+
   <div id="work">
   </div>
   <div class="pagecontainerwork">
@@ -47,49 +81,73 @@
       <div class="col-12 col-lg-6 col-xl-4">
       <div class="work01">
       <div>
+        <div class="underlay">
+          <div class="beschriftung"><h3>Atmosphere</h3><p>Fotoserie</p></div>
+        </div>
       <a href="#index">
       <img src="Images\thumpnail001.jpg" alt="Work01">
-      <div class="overlay">
-      </div>
-      <div class="beschriftung"><h3>Atmosphere</h3><p>Fotoserie</p></div>
       </a>
       </div>
       </div>
       </div>
 
       <div class="col-12 col-lg-6 col-xl-4">
+      <div class="work01">
+        <div class="underlay">
+          <div class="beschriftung"><h3>Roommatch</h3><p>Logo</p></div>
+        </div>
       <a  href="#index" target="_blank">
       <img src="Images\thumpnail002.jpg" alt="Work01">
-      <div class="beschriftung"><h3>Roommatch</h3><p>Logo</p></div>
+
       </a>
+      </div>
       </div>
 
       <div class="col-12 col-lg-6 col-xl-4">
+        <div class="work01">
+          <div class="underlay">
+            <div class="beschriftung"><h3>Run Yup pie</h3><p>Fotoserie</p></div>
+          </div>
       <a  href="#index" target="_blank">
       <img src="Images\thumpnail003.jpg" alt="Work01">
-      <div class="beschriftung"><h3>Run Yup pie</h3><p>Fotoserie</p></div>
       </a>
+      </div>
       </div>
 
       <div class="col-12 col-lg-6 col-xl-4">
+        <div class="work01">
+          <div class="underlay">
+            <div class="beschriftung"><h3>Portrait</h3><p>Einzelfoto</p></div>
+          </div>
       <a  href="#index" target="_blank">
       <img src="Images\thumpnail004.jpg" alt="Work01">
-      <div class="beschriftung"><h3>Portrait</h3><p>Einzelfoto</p></div>
+
       </a>
+      </div>
       </div>
 
       <div class="col-12 col-lg-6 col-xl-4">
+        <div class="work01">
+          <div class="underlay">
+            <div class="beschriftung"><h3>Mama</h3><p>Dokumentation</p></div>
+          </div>
       <a  href="#index" target="_blank">
       <img src="Images\thumpnail005.jpg" alt="Work01">
-      <div class="beschriftung"><h3>Mama</h3><p>Dokumentation</p></div>
+
       </a>
+      </div>
       </div>
 
       <div class="col-12 col-lg-6 col-xl-4">
+        <div class="work01">
+          <div class="underlay">
+            <div class="beschriftung"><h3>Yeshe030-ACSO</h3><p>Musikvideo</p></div>
+          </div>
       <a  href="#index" target="_blank">
       <img src="Images\thumpnail006.jpg" alt="Work01">
-      <div class="beschriftung"><h3>Yeshe030-ACSO</h3><p>Musikvideo</p></div>
+
       </a>
+      </div>
       </div>
 
         <div class="col-12 col-lg-6 col-xl-4">
@@ -150,7 +208,7 @@
   <div class="col-12">
     <div class="media">
   <a
-  href="https://www.linkedin.com/in/joao-wichert-7a7868140/" target="_blank">
+  href="https://www.youtube.com" target="_blank">
   youtube
   </a>
   </div>
