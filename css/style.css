@@ -277,6 +277,10 @@ text-decoration: none;
   border-width: 5px;
   border-radius: 0px;
 }
+.allworks a:hover{
+text-decoration: none;
+color: white;
+}
 
 
 
@@ -343,7 +347,7 @@ height:100%;
 
   /*....RESPONSIVE Work...*/
   .pagecontainerwork {
-    padding-top: 20vh;
+    padding-top: 17vh;
 
   }
   .pagecontainerwork img{
