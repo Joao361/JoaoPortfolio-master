@@ -225,7 +225,7 @@ width: 100%;
 
 }
 
-h4{
+.allworks p{
   vertical-align: middle;
   text-align: center;
   color: lightgray;
@@ -266,8 +266,12 @@ h4{
 text-decoration: none;
 }
 
+.lastdivwork a:hover{
+  text-decoration: none;
+}
+
 .allworks{
-  padding-top: 25px;
+  padding-top: 20px;
   height: 80px;
   width: auto;
   margin-top: 0px;
@@ -277,8 +281,8 @@ text-decoration: none;
   border-width: 5px;
   border-radius: 0px;
 }
-.allworks a:hover{
-text-decoration: none;
+.allworks:hover p{
+text-decoration: inherit;
 color: white;
 }
 
