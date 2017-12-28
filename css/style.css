@@ -184,8 +184,8 @@ width: 100%;
 }
 
 .pagecontainerwork img{
-  margin-bottom: 15px;
-  margin-top: 15px;
+  margin-bottom: 5px;
+  margin-top: 0px;
 }
 
 .underlay{
@@ -226,10 +226,7 @@ width: 100%;
 }
 
 h4{
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  vertical-align: middle;
   text-align: center;
   color: lightgray;
   font-variant: small-caps;
@@ -242,21 +239,45 @@ h4{
   color: lightgray;
 }
 
+.bildunterschrift{
+  padding-left: 5px;
+  color: lightgray;
+}
+
+.bildunterschrift h3{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.bildunterschrift p{
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+
+.work01{
+  padding: 15px;
+  margin-bottom: 30px;
+  border: solid;
+  border-color: #353535;
+  border-width: 5px;
+}
+
+.work01 a:hover{
+text-decoration: none;
+}
+
 .allworks{
-  height: 50%;
-  margin-top: 15px;
+  padding-top: 25px;
+  height: 80px;
+  width: auto;
+  margin-top: 0px;
   margin-bottom: 15px;
   border-style: solid;
-  border-color: gray;
-  border-width: 2px;
+  border-color: #353535;
+  border-width: 5px;
   border-radius: 0px;
 }
 
-.allworks img{
-  margin-bottom: -15px;
-  margin-top: -15px;
-  opacity: 0;
-}
 
 
 /*........About Me Text.........*/
@@ -339,12 +360,19 @@ height:100%;
     font-size: 20px;
   }
 
+  .work01{
+    margin-bottom: 15px;
+  }
+
   .allworks{
     margin-top: 0px;
   }
 
   .work01:hover .underlay {
     left: 15%;
+  }
+  .bildunterschrift p{
+    margin-bottom: 0px;
   }
 
   /*....RESPONSIVE About...*/
