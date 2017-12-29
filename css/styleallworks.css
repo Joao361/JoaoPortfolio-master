@@ -5,7 +5,36 @@
 body {
     background-color: black;
     padding: 20px;
-    font-family: 'Nunito';
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Header */
+.header{
+  margin-top: 25px;
+}
+
+.logoJW {
+  position: relative;
+  margin-left: 3%;
+  float: left;
+  width: 50px;
+}
+
+.back{
+  width: 50px;
+  height: 70px;
+  float: right;
+  margin-right: 5%;
+  border: solid;
+  border-color: gray;
+  border-width: 2px;
+  padding: 2px;
+}
+.back p{
+text-align: center;
+margin-top: 20%;
+color: gray;
+font-size: 30px;
 }
 
 /* Center website */
@@ -19,13 +48,14 @@ h1 {
     word-break: break-all;
 }
 
-.row {
-    margin: 8px -16px;
+.grid {
+    margin: 0px -16px;
 }
 
+
 /* Add padding BETWEEN each column (if you want) */
-.row,
-.row > .column {
+.grid,
+.grid > .column {
     padding: 8px;
 }
 
@@ -37,34 +67,72 @@ h1 {
 }
 
 /* Clear floats after rows */
-.row:after {
+.grid:after {
     content: "";
     display: table;
     clear: both;
 }
 
+
 /* Content */
 .content {
-    background-color: white;
+    background-color: #1c1c1c;
     padding: 10px;
+    color: lightgray;
 }
+.content img{
+    padding-bottom: 5px;
+}
+.content h4{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.content p{
+    font-size: 14px;
+}
+
 
 /* The "show" class is added to the filtered elements */
 .show {
     display: block;
 }
-
+#myBtnContainer{
+  margin-top: 100px;
+}
 /* Style the buttons */
 .btn {
   border: none;
   outline: none;
-  padding: 12px 16px;
-  background-color: white;
+  /*padding: 12px 16px;*/
+  background-color: black;
+  color: gray;
   cursor: pointer;
+  font-size: 24px;
+  font-variant: small-caps;
 }
 
 /* Add a dark grey background color to the active button */
 .btn:hover, .active {
-  background-color: #666;
   color: white;
+}
+
+
+/*Rules for Mobile Devices*/
+@media (max-width: 1080px) {
+
+  .header{
+    margin-top: 3px;
+  }
+  .logoJW {
+    margin-left: 0px;
+  }
+  .back p{
+  margin-right: 5px;
+  }
+  .column {
+      float: Center;
+      width: 100%;
+  }
+
 }
