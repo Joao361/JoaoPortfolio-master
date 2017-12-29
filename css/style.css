@@ -20,6 +20,7 @@ img {
 }
 /*.....OVERLAY NAVIGATION........*/
 .overlay {
+    min-height: 100vh;
     height: 100%;
     width: 0;
     position: fixed;
@@ -219,7 +220,6 @@ width: 100%;
 
 .beschriftung h3{
   font-size: 20px;
-  line-height: 50%;
   font-weight: bold;
   color: lightgray;
 
@@ -255,11 +255,12 @@ width: 100%;
 }
 
 .work01{
-  padding: 15px;
+  background-color: #1c1c1c;
+  padding: 10px;
   margin-bottom: 30px;
-  border: solid;
+  /* border: solid;
   border-color: #353535;
-  border-width: 5px;
+  border-width: 5px;*/
 }
 
 .work01 a:hover{
@@ -305,7 +306,8 @@ height:100%;
 /*..........Contact links........*/
 .pagecontainercontact{
   padding-top: 30vh;
-  height: 95vh;
+  min-height: 95vh;
+  height: 100%;
 }
 .media {
   display: block;
