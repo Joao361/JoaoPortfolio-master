@@ -191,28 +191,6 @@ width: 100%;
   margin-top: 0px;
 }
 
-.underlay{
-  position: absolute;
-  top: 20%;
-  bottom: 25%;
-  left: 100%;
-  background-color: black;
-  overflow: hidden;
-  opacity: .95;
-  width: 0;
-  height: 50%;
-  transition: .5s ease;
-}
-
-.work01:hover .underlay {
-  width: 100%;
-  left: 25%;
-}
-.work01:active .underlay {
-  width: 100%;
-  left: 25%;
-}
-
 .beschriftung{
   position: absolute;
   top: 25%;
@@ -356,8 +334,6 @@ height:100%;
   /*....RESPONSIVE Work...*/
   .pagecontainerwork {
     padding-top: 17vh;
-    padding-left: 0px;
-    padding-right: 0px;
   }
   .pagecontainerwork img{
     margin-top: 0px;
@@ -411,9 +387,17 @@ height:100%;
     font-size: 30px;
   }
 
-  /*....RESPONSIVE NAVIGATION...*/
+  @media (max-width: 900px ) {
+    .pagecontainerwork {
+      padding-left: 25vw;
+      padding-right: 25vw;
+    }
+  }
 
 
-@media (max-width: ) {
-
+@media (max-width: 400px ) {
+  .pagecontainerwork {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
