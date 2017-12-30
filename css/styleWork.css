@@ -24,12 +24,14 @@ color: lightgray;
   border-color: gray;
   border-width: 2px;
   padding: 2px;
+  cursor: pointer;
 }
 .back p{
 text-align: center;
 margin-top: 20%;
 color: gray;
 font-size: 30px;
+text-decoration: none;
 }
 
 p{
@@ -174,6 +176,7 @@ h2{
 }
 .imagecontainer img{
   max-width: 100%;
+  cursor: pointer;
 }
 .textcontainer{
   position: sticky;

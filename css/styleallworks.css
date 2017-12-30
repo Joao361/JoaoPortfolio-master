@@ -7,6 +7,21 @@ body {
     padding: 20px;
     font-family: 'Raleway', sans-serif;
 }
+a:link {
+    color: lightgray;
+    text-decoration: none;
+}
+a:visited {
+    color: lightgray;
+    text-decoration: none;
+}
+a:hover {
+    color: lightgray;
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
 
 /* Header */
 .header{

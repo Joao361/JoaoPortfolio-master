@@ -21,11 +21,9 @@
     </a>
     </div>
 
-    <a href="index.html">
     <div class="back">
-      <p> &#8678; </p>
+      <p onclick="goBack()"> &#8678; </p>
     </div>
-    </a>
 
   </div>
 
@@ -170,6 +168,12 @@ modal.style.display = "none";
 }
 modalImg.onclick = function() {
 modal.style.display = "none";
+}
+</script>
+
+<script>
+function goBack() {
+    window.history.back();
 }
 </script>
 
