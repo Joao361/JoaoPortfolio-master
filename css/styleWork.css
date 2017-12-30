@@ -145,14 +145,7 @@ h2{
    cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 1080px){
-   .modal-content {
-      margin-top: 55px;
-       width: 100%;
-       height: auto;
-   }
-}
+
 
 /*.........Yeshe030-ACSO.........*/
 .imagecontainer video{
@@ -194,4 +187,47 @@ h2{
   margin-bottom: 20px;
   width: 35vw;
   float: right;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media (max-width: 1080px){
+  .modal-content {
+     margin-top: 55px;
+      width: 100%;
+      height: auto;
+  }
+
+   .Box {
+   display: flex;
+   flex-flow: column-reverse;
+   }
+
+   .imagecontainer{
+    width: auto;
+    height: 100%;
+    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+    align-content: space-between;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    }
+    .foto{
+    width: auto;
+    display: inline-block;
+    margin: 0px;
+    margin-bottom: 20px;
+    }
+    .textcontainer {
+    display: inline-block;
+    width: auto;
+    padding: 10px;
+    padding-left: 15px;
+    margin-top: 10px;
+    }
+    .imagecontainer video {
+    width: auto;
+    }
+
 }
