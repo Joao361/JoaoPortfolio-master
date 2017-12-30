@@ -43,6 +43,17 @@ h2{
   font-weight: bold;
   font-size: 20px;
 }
+h5{
+  background-color: lightgray;
+  color: #1c1c1c;
+  padding: 5px;
+  font-size: 9px;
+  font-variant: small-caps;
+  font-weight: bold;
+  float: right;
+  margin-top: 0px;
+  letter-spacing: 1px;
+}
 
 /* The Modal (background) */
 .modal {

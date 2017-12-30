@@ -11,9 +11,10 @@ p{
   margin-bottom: 0px;
 }
 h5{
+  font-family: 'Nunito', sans-serif;
   background-color: lightgray;
   color: #1c1c1c;
-  padding: 3px;
+  padding: 5px;
   font-size: 9px;
   font-variant: small-caps;
   font-weight: bold;
